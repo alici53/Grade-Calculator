@@ -2,7 +2,13 @@
 
 using namespace std;
 
-double calculateGrade(double participationP, double participation, double quizzesPercentage, double quizzes, double projects, double projectsPercentage, double labs, double labsPercentage, double mid1, double mid1Percentage, double mid2, double mid2Percentage, double finalExam, double finalExamPercentage) {
+double calculateGrade(double participationP, double participation, 
+                    double quizzesPercentage, double quizzes, 
+                    double projects, double projectsPercentage,
+                    double labs, double labsPercentage, 
+                    double mid1, double mid1Percentage,
+                    double mid2, double mid2Percentage, 
+                    double finalExam, double finalExamPercentage) {
     // Calculate weighted scores
     double participationScore = participation * (participationP / 100);
     double quizzesScore = quizzes * (quizzesPercentage / 100);
@@ -64,7 +70,8 @@ int main() {
     cin >> finalExam;
 
     // Calculate the total grade
-    double totalGrade = calculateGrade(participationPercentage, participation,                     quizzesPercentage, quizzes, 
+    double totalGrade = calculateGrade(participationPercentage, participation,
+    quizzesPercentage, quizzes, 
     projects, projectsPercentage, 
     labs, labsPercentage, 
     mid1, mid1Percentage, 
